@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HTML5 placeholder polyfill and augment</title>
+  <link rel="stylesheet" href="screen.css"/>
+</head>
+<body>
+  
+<h2>HTML5 placeholder polyfill and augment</h2>
+<input type="text" placeholder="Full Name"/>
+<input type="text" placeholder="Favorite Pet"/>
+<input type="text" placeholder="Verify Favorite Pet"/>
+<input type="text" placeholder="(7+2)*3="/>
+
+<p>Tested in: FF4, Chrome 13, IE6, IE7, IE8, IE9, Safari 5 OSX, iPad(IOS 3.2), iPhone(IOS 3.2 &amp; 4), Android 2.1, Opera Mini 6 †, Opera Mobile 11*</p>
+
+<small>
+<p>† Fails in Opera Mini. Inputs don't layout correctly and the labels are "undefined"</p>
+<p>* Exhibits HTML spec behavior in Opera Mobile 11: Placeholders disappear on focus.</p>
+</small>
+<script src="http://code.jquery.com/jquery-1.6.2.js"></script>
+<script src="jquery.placeholder.js"></script>
+</body>
+</html>
