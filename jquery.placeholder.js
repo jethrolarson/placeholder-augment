@@ -1,3 +1,5 @@
+//Author: @jethrolarson
+//License: MIT, GPL, or WTFPL
 (function($){
 	//id itterator if the inputs don't have ids
 	var phid=0;
