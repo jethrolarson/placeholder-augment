@@ -7,7 +7,7 @@
 				$(this).parent().addClass('placeholder-focus');
 			},blur: function(){
 				$(this).parent().removeClass('placeholder-focus');
-			},'keyup input': function(){
+			},'keyup input change': function(){
 				$(this).parent().toggleClass('placeholder-changed',this.value!=='');
 			}
 		}).each(function(){
@@ -20,6 +20,22 @@
 				.append($this); 
 			//Disables default placeholder
 			$this.attr('placeholder','').keyup();
+			
+			//fixes lack of event for autocomplete in firefox < 4:'(
+			if($.browser.mozilla && $.browser.version.slice(0,3) == "1.9"){
+				$this.focus(function(){
+					var val = this.value,
+					    el = this,
+					    $el = $(this);
+					$el.data('ph_timer', setInterval(function(){
+						if(val != el.value){
+							$el.change();
+						}
+					},100));
+				}).blur(function(){
+					clearTimeout($(this).data('ph_timer'));
+				});
+			}
 		});
 	};
 	
