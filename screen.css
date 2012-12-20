@@ -1,19 +1,18 @@
-/* input and label must be the same font-size */
-body{font: 13px sans-serif;}
-input{font-size: 13px;} 
-
-.placeholderWrap{
+.placeholderWrap {
     position: relative; 
-    display: inline-block;}
-.placeholderWrap label{
+    display: inline-block;
+}
+.placeholderWrap label {
     color: #555;
     position: absolute; 
-    top: 6px; left: 6px; /* Might have to adjust this based on font-size */
+    top: 50%;
+    left: 6px; /* Might have to adjust this based on font-size */
     pointer-events: none;
     display: block;
+    margin: 0;
+    cursor: text;
 }
-
-.placeholder-focus label{color: #999;}/* could use a css animation here if desired*/
-.placeholder-changed label{
-    display: none;
+.placeholder-focus label {color: #999;}/* could use a css animation here if desired*/
+.placeholder-changed label {
+    display: none !important;
 }
