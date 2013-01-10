@@ -35,7 +35,7 @@
 						}
 					},100));
 				}).blur(function(){
-					clearTimeout($(this).data('ph_timer'));
+					clearInterval($(this).data('ph_timer'));
 				});
 			}
 		});
