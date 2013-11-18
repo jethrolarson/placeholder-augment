@@ -1,0 +1,16 @@
+{
+    "name": "placeholder-augment",
+    "version": "0.1.1",
+    "main": [
+        "jquery.placeholder.js",
+        "screen.css"
+    ],
+    "ignore": [
+        "index.html",
+        "package.json",
+        "README.md"
+    ],
+    "dependencies": {
+        "jquery": "latest"
+    }
+}
