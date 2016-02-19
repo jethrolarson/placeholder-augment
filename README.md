@@ -3,9 +3,9 @@ Augments and polyfills the html5 placeholder attribute.
 When you focus a field it keeps the placeholder text until you start typing. This keeps users from forgetting what the field is before they start typing.
 
 Usage: 
-# include js
-# add placeholder attribute to fields you want
-# invoke plugin with `window.initPlaceholder()`
+1. include js
+2. add placeholder attribute to fields you want
+3. invoke plugin with `window.initPlaceholder()`
 
 Demo: <http://jethrolarson.github.io/placeholder-augment/>
 
