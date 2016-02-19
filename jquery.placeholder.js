@@ -10,7 +10,7 @@
 			},blur: function(){
 				$(this).parent().removeClass('placeholder-focus');
 			},'keyup input change': function(){
-				$(this).parent().toggleClass('placeholder-changed', this.value);
+				$(this).parent().toggleClass('placeholder-changed', !!this.value);
 			}
 		}).each(function(){
 			var $this = $(this);
